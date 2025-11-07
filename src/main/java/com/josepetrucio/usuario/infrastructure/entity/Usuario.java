@@ -12,10 +12,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-
 @Entity
 @Table(name = "usuario")
+@Builder
 public class Usuario implements UserDetails {
 
     @Id
@@ -34,10 +33,10 @@ public class Usuario implements UserDetails {
     @JoinColumn(name ="usuario_id", referencedColumnName = "id")
     private List<Telefone> telefones;
 
-    @Override
+   @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of();
-    }
+}
 
     @Override
     public String getPassword() {

@@ -7,10 +7,9 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-
 @Entity
 @Table(name = "telefone")
+@Builder
 public class Telefone {
 
     @Id
