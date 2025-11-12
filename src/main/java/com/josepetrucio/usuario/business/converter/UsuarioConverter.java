@@ -126,8 +126,6 @@ public class UsuarioConverter {
     }
 
 }
-
-
 /*
         List<Endereco> enderecos = new ArrayList<>();
         * for(EnderecoDTO enderecoDTO : enderecoDTOS){
